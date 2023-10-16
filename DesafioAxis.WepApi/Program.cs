@@ -1,10 +1,21 @@
 using DesafioAxis.Domain.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 builder.Services.AddControllers();
+
+builder.Logging.ClearProviders();
+
+var logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .WriteTo.Console()
+    .WriteTo.File("logs/desafio.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {

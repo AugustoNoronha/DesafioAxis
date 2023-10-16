@@ -5,6 +5,10 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesafioAxis.WepApi", "DesafioAxis.WepApi\DesafioAxis.WepApi.csproj", "{AD902EBF-819B-42E7-957F-712DD3975E85}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testes", "Testes", "{996D3C52-ABC4-40B0-92BE-E5240622AA94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioAxis.Testes", "DesafioAxis.Testes\DesafioAxis.Testes.csproj", "{DA1263F8-7686-4382-BCE2-1EAE9551C94D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{AD902EBF-819B-42E7-957F-712DD3975E85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD902EBF-819B-42E7-957F-712DD3975E85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD902EBF-819B-42E7-957F-712DD3975E85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA1263F8-7686-4382-BCE2-1EAE9551C94D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA1263F8-7686-4382-BCE2-1EAE9551C94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA1263F8-7686-4382-BCE2-1EAE9551C94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA1263F8-7686-4382-BCE2-1EAE9551C94D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA1263F8-7686-4382-BCE2-1EAE9551C94D} = {996D3C52-ABC4-40B0-92BE-E5240622AA94}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {88EC6D8E-C2E6-4D88-AECE-726CAA910975}
