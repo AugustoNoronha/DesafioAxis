@@ -6,8 +6,6 @@
         public string Name { get; set; } = string.Empty;
         public PixType PixType { get; set; }
         public string PixKey { get; set; } = string.Empty;
-
-
     }
 
     public enum PixType

@@ -4,6 +4,6 @@
     {
         public long Id { get; set; }
         public string Description { get; set; } = string.Empty;
-        public List<Favorito>? Favoritos { get; set; } 
+       // public List<Favorito>? Favoritos { get; set; } 
     }
 }

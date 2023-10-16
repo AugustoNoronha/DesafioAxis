@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gutin\\OneDrive\\Documentos\\_dev\\DesafioAxis.WebApi\\DesafioAxis.WepApi\\DesafioAxis.WepApi.csproj": {}
+    "D:\\_dev\\DesafioAxis\\DesafioAxis.WepApi\\DesafioAxis.WepApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gutin\\OneDrive\\Documentos\\_dev\\DesafioAxis.WebApi\\DesafioAxis.WepApi\\DesafioAxis.WepApi.csproj": {
+    "D:\\_dev\\DesafioAxis\\DesafioAxis.WepApi\\DesafioAxis.WepApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gutin\\OneDrive\\Documentos\\_dev\\DesafioAxis.WebApi\\DesafioAxis.WepApi\\DesafioAxis.WepApi.csproj",
+        "projectUniqueName": "D:\\_dev\\DesafioAxis\\DesafioAxis.WepApi\\DesafioAxis.WepApi.csproj",
         "projectName": "DesafioAxis.WepApi",
-        "projectPath": "C:\\Users\\gutin\\OneDrive\\Documentos\\_dev\\DesafioAxis.WebApi\\DesafioAxis.WepApi\\DesafioAxis.WepApi.csproj",
-        "packagesPath": "C:\\Users\\gutin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gutin\\OneDrive\\Documentos\\_dev\\DesafioAxis.WebApi\\DesafioAxis.WepApi\\obj\\",
+        "projectPath": "D:\\_dev\\DesafioAxis\\DesafioAxis.WepApi\\DesafioAxis.WepApi.csproj",
+        "packagesPath": "C:\\Users\\Augusto\\.nuget\\packages\\",
+        "outputPath": "D:\\_dev\\DesafioAxis\\DesafioAxis.WepApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gutin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Augusto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,9 +54,17 @@
               "target": "Package",
               "version": "[7.0.11, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.4, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[7.0.11, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -95,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
