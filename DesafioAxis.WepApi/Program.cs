@@ -1,25 +1,43 @@
+using DesafioAxis.Domain.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "APIAxisDesafio", Description = "Desafio da empresa Axis", Version = "v1" });
+});
+
+string connectionString = builder.Configuration.GetConnectionString("PostgresConnection");
+
+// Configura o contexto do Entity Framework para usar PostgreSQL
+builder.Services.AddDbContext<DesafioAxisContext>(options =>
+    options.UseNpgsql(connectionString));
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
+
 if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+{ 
+    app.UseDeveloperExceptionPage();
 }
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "APIDesafioAxis v1");
+});
 
-app.UseRouting();
+
+app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapRazorPages();
+app.MapControllers();
+
 
 app.Run();
